@@ -149,9 +149,8 @@ export const URLS = {
   localhost: "http://localhost:5000",
 };
 
-// export const BACKEND_API_URL = URLS.railway;
-export const BACKEND_API_URL =
-  env.NEXT_PUBLIC_DEMO_MODE === "PROD" ? URLS.railway : URLS.localhost;
+
+export const BACKEND_API_URL =URLS.railway
 
 export const WakeUpFromColdStartURL = BACKEND_API_URL;
 

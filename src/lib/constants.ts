@@ -16,6 +16,17 @@ export const samplePrompts = [
     referenceData: `Wood is a versatile and popular material that is used for many purposes. There are many different types of wood, each with its own distinct features, applications, and benefits. One common type of wood is pine. Pine is a softwood that is light in color and has a straight grain. It is a common choice for construction, as it is relatively inexpensive and easy to work with. Pine is also a popular choice for furniture, particularly in rustic or country-style decor. It can be stained or painted to match any color scheme and can be used to create a variety of different pieces, including bookshelves, tables, and beds.\n\nAnother popular type of wood is oak. Oak is a hardwood that is known for its strength and durability. It has a coarse texture and a distinctive grain pattern that makes it a popular choice for furniture and flooring. Oak is also a popular choice for construction, particularly in areas where high-strength wood is required, such as in bridges or boats. Oak can be stained or finished to highlight its natural beauty, and it is also resistant to moisture, making it a good choice for outdoor furniture or decking.`,
   },
   {
+    title: "Types of Metal Alloys",
+    prompt:
+      "the various metal alloys, including their distinct features, applications, and advantages.",
+    referenceData: `Common types of metal alloys:
+
+Steel: Steel is an alloy primarily composed of iron and carbon. It offers exceptional strength, durability, and versatility. Steel finds applications in construction, automotive manufacturing, appliances, and various industrial sectors.\n
+Aluminum alloys: Aluminum alloys are lightweight and possess excellent corrosion resistance. They are widely used in the aerospace industry, automotive components, packaging materials, and structural applications where weight reduction is crucial.\n
+Titanium alloys: Titanium alloys are known for their exceptional strength-to-weight ratio, corrosion resistance, and biocompatibility. They are extensively utilized in aerospace engineering, medical implants, sports equipment, and chemical processing industries.\n
+Copper alloys: Copper alloys, such as bronze and brass, offer high electrical conductivity, thermal conductivity, and excellent formability. They are employed in electrical wiring, plumbing fixtures, musical instruments, and decorative applications.`,
+  },
+  {
     title: "Popular video games",
     prompt: `the most popular best-selling video games of all time, on all the major gaming platforms.`,
     referenceData: `The most popular video games of all time include:\n1. Minecraft - PC, Playstation, Xbox, Mobile (over 238,000,000 sales)\n2. Pokemon - Nintendo, Mobile\n3. Grand Theft Auto - PC, Playstation, Xbox, Mobile`,
@@ -149,8 +160,7 @@ export const URLS = {
   localhost: "http://localhost:5000",
 };
 
-
-export const BACKEND_API_URL =URLS.railway
+export const BACKEND_API_URL = URLS.railway;
 
 export const WakeUpFromColdStartURL = BACKEND_API_URL;
 

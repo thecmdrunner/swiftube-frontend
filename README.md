@@ -4,7 +4,7 @@ Initialized with [**`create-t3-app`**](https://create.t3.gg/) ❤️
 
 AI Shortz is an innovative project that utilizes OpenAI and Remotion to transform content in text format, into polished explainer videos. It uses Google's text-to-speech feature to provide the voice for the video.
 
-This project is built with a Next.js frontend and an Express backend ([another repo](https://github.com/thecmdrunner/ai-shortz-backend)).
+This project is built with a Next.js frontend and an Express backend ([another repo](https://github.com/thecmdrunner/swiftube-backend)).
 
 # Getting Started
 

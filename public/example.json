@@ -1,0 +1,330 @@
+{
+  "metadata": {
+    "durationInSeconds": 60,
+    "topic": "Advantages of plant-based eating",
+    "table": { "label": "Comparison of plant-based and animal-based diets" },
+    "graphic": {
+      "type": "pie-chart",
+      "topic": "Benefits of plant-based eating"
+    },
+    "height": 1920,
+    "style": "fun",
+    "color": { "accentColor": "#00FF00" },
+    "width": 1080,
+    "description": "Create a video that showcases the benefits of plant-based eating, such as improved health, reduced environmental impact, and ethical considerations for animals. The video should include scientific research, quotes, and anecdotes from experts and individuals who have experienced the positive effects of this lifestyle. It should also cover the challenges of transitioning to a plant-based diet, such as difficulty finding affordable and tasty options, and provide practical tips and resources to overcome them."
+  },
+  "token": {
+    "token": "create-advanced-1",
+    "credits": 2,
+    "owner": "thecmdrunner"
+  },
+  "isValid": true,
+  "data": {
+    "table": {
+      "table": "| Diet Type | Pros | Cons |\n| --- | --- | --- |\n| Plant-Based | High in nutrients, low in saturated fats, reduces risk of chronic diseases | May require more planning and knowledge for balanced nutrition, may be more expensive in some cases|\n| Animal-Based | Can be high in protein and certain vitamins, may be more affordable in some cases | High in saturated fats, red meat linked to cancer and heart disease, may increase risk of chronic diseases |",
+      "voiceAudio": {
+        "durations": [43.62, 47.054625],
+        "urls": [
+          "https://res.cloudinary.com/drnm9lhef/video/upload/v1680956879/ea5a7ce412/en-IN-Standard-C-bd775b7ade1ff45d7bb8ae47890de3ae.wav",
+          "https://res.cloudinary.com/drnm9lhef/video/upload/v1680956879/ea5a7ce412/en-IN-Standard-D-bd775b7ade1ff45d7bb8ae47890de3ae.wav"
+        ]
+      },
+      "summary": "The table provides a quick comparison of plant-based and animal-based diets. Plant-based diets are high in nutrients and low in saturated fats, which can reduce the risk of chronic diseases. However, they may require more planning and knowledge to ensure balanced nutrition, as well as being potentially more expensive. On the other hand, animal-based diets can be high in protein and certain vitamins, but also high in saturated fats which have been linked to cancer and heart disease, increasing risk of chronic diseases. Ultimately, individuals should consider their own nutritional needs, budget, and ethical beliefs when choosing their diet."
+    },
+    "intro": {
+      "talkingPoint": "Are you looking for a way to improve your health, reduce your environmental impact, and make a positive ethical choice for animals? Look no further than plant-based eating! Join us in this video as we explore the wonderful benefits of a plant-based diet. We'll showcase scientific research, quotes, and anecdotes from experts and individuals who have experienced the positive effects of this lifestyle. We'll even address the challenges of transitioning to a plant-based diet, such as finding tasty and affordable options, and provide practical tips and resources to help you on your journey. Plus, take a look at our table comparing plant-based and animal-based diets and our pie-chart highlighting the incredible benefits of plant-based eating. So what are you waiting for? Let's get started on this fun and informative journey towards a healthier and happier life with plant-based eating!",
+      "voiceAudio": {
+        "urls": [
+          "https://res.cloudinary.com/drnm9lhef/video/upload/v1680956886/ea5a7ce412/en-IN-Standard-C-88b6a6b3bc578e72cc0cb664d2b09425.wav",
+          "https://res.cloudinary.com/drnm9lhef/video/upload/v1680956885/ea5a7ce412/en-IN-Standard-D-88b6a6b3bc578e72cc0cb664d2b09425.wav"
+        ],
+        "durations": [58.386375, 63.229167]
+      },
+      "images": [
+        {
+          "hostPageDisplayUrl": "https://www.megakitch.com/the-surprising-benefits-of-eating-a-plant-based-diet",
+          "accentColor": "#C29C09",
+          "hostPageUrl": "https://www.megakitch.com/the-surprising-benefits-of-eating-a-plant-based-diet/",
+          "width": 474,
+          "height": 310,
+          "encodingFormat": "jpeg",
+          "contentUrl": "https://www.megakitch.com/wp-content/uploads/2023/04/Eating-a-Plant-Based-Diet.png",
+          "name": "Surprising Benefit of Plant-Based Diet What You Need to Know",
+          "contentSize": "293316 B",
+          "imageId": "FDC50C9F129D7D7C8CA5A473D16A04D5A5513A56"
+        },
+        {
+          "imageId": "FDC50C9F129D7D7C8CA5E61A0018885ADB913582",
+          "hostPageUrl": "https://www.megakitch.com/the-surprising-benefits-of-eating-a-plant-based-diet/",
+          "contentSize": "471148 B",
+          "contentUrl": "https://www.megakitch.com/wp-content/uploads/2023/04/The-Surprising-Benefits-of-Eating-a-Plant-Based-Diet.png",
+          "encodingFormat": "jpeg",
+          "width": 474,
+          "hostPageDisplayUrl": "https://www.megakitch.com/the-surprising-benefits-of-eating-a-plant-based-diet",
+          "height": 312,
+          "name": "Surprising Benefit of Plant-Based Diet What You Need to Know",
+          "accentColor": "#B94D12"
+        },
+        {
+          "imageId": "9DAE53088FED18477C2306E6C8C5B56303F19DF3",
+          "contentUrl": "https://mynutrigene.com/wp-content/uploads/2023/04/plant-based-meal.jpg",
+          "accentColor": "#AE231D",
+          "width": 474,
+          "contentSize": "45751 B",
+          "encodingFormat": "jpeg",
+          "hostPageUrl": "https://mynutrigene.com/pros-and-cons-of-a-plant-based-diet/",
+          "name": "Going Green: Pros and Cons of a Plant-Based Diet for Weight Loss ...",
+          "hostPageDisplayUrl": "https://mynutrigene.com/pros-and-cons-of-a-plant-based-diet",
+          "height": 315
+        }
+      ]
+    },
+    "videoSections": [
+      {
+        "title": "Improved health outcomes with plant-based eating",
+        "images": [
+          {
+            "encodingFormat": "jpeg",
+            "hostPageUrl": "https://www.megakitch.com/the-surprising-benefits-of-eating-a-plant-based-diet/",
+            "imageId": "FDC50C9F129D7D7C8CA5A473D16A04D5A5513A56",
+            "accentColor": "#C29C09",
+            "height": 310,
+            "width": 474,
+            "hostPageDisplayUrl": "https://www.megakitch.com/the-surprising-benefits-of-eating-a-plant-based-diet",
+            "contentUrl": "https://www.megakitch.com/wp-content/uploads/2023/04/Eating-a-Plant-Based-Diet.png",
+            "contentSize": "293316 B",
+            "name": "Surprising Benefit of Plant-Based Diet What You Need to Know"
+          },
+          {
+            "imageId": "FDC50C9F129D7D7C8CA5E61A0018885ADB913582",
+            "height": 312,
+            "hostPageUrl": "https://www.megakitch.com/the-surprising-benefits-of-eating-a-plant-based-diet/",
+            "hostPageDisplayUrl": "https://www.megakitch.com/the-surprising-benefits-of-eating-a-plant-based-diet",
+            "width": 474,
+            "contentSize": "471148 B",
+            "encodingFormat": "jpeg",
+            "name": "Surprising Benefit of Plant-Based Diet What You Need to Know",
+            "contentUrl": "https://www.megakitch.com/wp-content/uploads/2023/04/The-Surprising-Benefits-of-Eating-a-Plant-Based-Diet.png",
+            "accentColor": "#B94D12"
+          },
+          {
+            "name": "Going Green: Pros and Cons of a Plant-Based Diet for Weight Loss ...",
+            "imageId": "9DAE53088FED18477C2306E6C8C5B56303F19DF3",
+            "width": 474,
+            "hostPageUrl": "https://mynutrigene.com/pros-and-cons-of-a-plant-based-diet/",
+            "contentUrl": "https://mynutrigene.com/wp-content/uploads/2023/04/plant-based-meal.jpg",
+            "contentSize": "45751 B",
+            "height": 315,
+            "encodingFormat": "jpeg",
+            "accentColor": "#AE231D",
+            "hostPageDisplayUrl": "https://mynutrigene.com/pros-and-cons-of-a-plant-based-diet"
+          }
+        ],
+        "talkingPoint": "Plant-based eating can have a big impact on your health, including reducing your risk of heart disease, certain cancers, and type 2 diabetes. Studies show that people who eat a plant-based diet often have lower BMI and have better gut health.",
+        "voiceAudio": {
+          "urls": [
+            "https://res.cloudinary.com/drnm9lhef/video/upload/v1680956881/ea5a7ce412/en-IN-Standard-C-bbf2d74b73ea58ca2a5cf5718f5a4a87.wav",
+            "https://res.cloudinary.com/drnm9lhef/video/upload/v1680956881/ea5a7ce412/en-IN-Standard-D-bbf2d74b73ea58ca2a5cf5718f5a4a87.wav"
+          ],
+          "durations": [20.014708, 21.791792]
+        }
+      },
+      {
+        "images": [
+          {
+            "contentUrl": "https://www.megakitch.com/wp-content/uploads/2023/04/Eating-a-Plant-Based-Diet.png",
+            "name": "Surprising Benefit of Plant-Based Diet What You Need to Know",
+            "width": 474,
+            "hostPageDisplayUrl": "https://www.megakitch.com/the-surprising-benefits-of-eating-a-plant-based-diet",
+            "accentColor": "#C29C09",
+            "hostPageUrl": "https://www.megakitch.com/the-surprising-benefits-of-eating-a-plant-based-diet/",
+            "imageId": "FDC50C9F129D7D7C8CA5A473D16A04D5A5513A56",
+            "height": 310,
+            "encodingFormat": "jpeg",
+            "contentSize": "293316 B"
+          },
+          {
+            "accentColor": "#B94D12",
+            "width": 474,
+            "name": "Surprising Benefit of Plant-Based Diet What You Need to Know",
+            "encodingFormat": "jpeg",
+            "contentSize": "471148 B",
+            "height": 312,
+            "imageId": "FDC50C9F129D7D7C8CA5E61A0018885ADB913582",
+            "hostPageUrl": "https://www.megakitch.com/the-surprising-benefits-of-eating-a-plant-based-diet/",
+            "contentUrl": "https://www.megakitch.com/wp-content/uploads/2023/04/The-Surprising-Benefits-of-Eating-a-Plant-Based-Diet.png",
+            "hostPageDisplayUrl": "https://www.megakitch.com/the-surprising-benefits-of-eating-a-plant-based-diet"
+          },
+          {
+            "name": "Going Green: Pros and Cons of a Plant-Based Diet for Weight Loss ...",
+            "contentSize": "45751 B",
+            "height": 315,
+            "width": 474,
+            "encodingFormat": "jpeg",
+            "accentColor": "#AE231D",
+            "hostPageUrl": "https://mynutrigene.com/pros-and-cons-of-a-plant-based-diet/",
+            "hostPageDisplayUrl": "https://mynutrigene.com/pros-and-cons-of-a-plant-based-diet",
+            "contentUrl": "https://mynutrigene.com/wp-content/uploads/2023/04/plant-based-meal.jpg",
+            "imageId": "9DAE53088FED18477C2306E6C8C5B56303F19DF3"
+          }
+        ],
+        "talkingPoint": "Eating plant-based can also reduce your environmental impact. Animal agriculture is a leading cause of deforestation, freshwater consumption, and greenhouse gas emissions. By choosing plant-based options, you can help reduce these negative effects.",
+        "voiceAudio": {
+          "urls": [
+            "https://res.cloudinary.com/drnm9lhef/video/upload/v1680956881/ea5a7ce412/en-IN-Standard-C-dc17fa82126613ea22878e188080d15f.wav",
+            "https://res.cloudinary.com/drnm9lhef/video/upload/v1680956881/ea5a7ce412/en-IN-Standard-D-dc17fa82126613ea22878e188080d15f.wav"
+          ],
+          "durations": [21.826708, 23.902125]
+        },
+        "title": "Reducing environmental impact through plant-based eating"
+      },
+      {
+        "voiceAudio": {
+          "durations": [20.492208, 22.107375],
+          "urls": [
+            "https://res.cloudinary.com/drnm9lhef/video/upload/v1680956881/ea5a7ce412/en-IN-Standard-C-f23e733a04639cbd42ed31ec21080596.wav",
+            "https://res.cloudinary.com/drnm9lhef/video/upload/v1680956881/ea5a7ce412/en-IN-Standard-D-f23e733a04639cbd42ed31ec21080596.wav"
+          ]
+        },
+        "talkingPoint": "For many people, the ethical considerations of animal welfare are an important factor in making the switch to plant-based eating. By choosing to not consume animal products, you are reducing the demand for factory farming and animal cruelty.",
+        "title": "Ethical considerations of animal welfare and plant-based eating",
+        "images": [
+          {
+            "width": 474,
+            "name": "Surprising Benefit of Plant-Based Diet What You Need to Know",
+            "contentSize": "293316 B",
+            "encodingFormat": "jpeg",
+            "height": 310,
+            "contentUrl": "https://www.megakitch.com/wp-content/uploads/2023/04/Eating-a-Plant-Based-Diet.png",
+            "imageId": "FDC50C9F129D7D7C8CA5A473D16A04D5A5513A56",
+            "hostPageDisplayUrl": "https://www.megakitch.com/the-surprising-benefits-of-eating-a-plant-based-diet",
+            "hostPageUrl": "https://www.megakitch.com/the-surprising-benefits-of-eating-a-plant-based-diet/",
+            "accentColor": "#C29C09"
+          },
+          {
+            "width": 474,
+            "accentColor": "#B94D12",
+            "encodingFormat": "jpeg",
+            "hostPageDisplayUrl": "https://www.megakitch.com/the-surprising-benefits-of-eating-a-plant-based-diet",
+            "imageId": "FDC50C9F129D7D7C8CA5E61A0018885ADB913582",
+            "name": "Surprising Benefit of Plant-Based Diet What You Need to Know",
+            "contentUrl": "https://www.megakitch.com/wp-content/uploads/2023/04/The-Surprising-Benefits-of-Eating-a-Plant-Based-Diet.png",
+            "height": 312,
+            "contentSize": "471148 B",
+            "hostPageUrl": "https://www.megakitch.com/the-surprising-benefits-of-eating-a-plant-based-diet/"
+          },
+          {
+            "imageId": "9DAE53088FED18477C2306E6C8C5B56303F19DF3",
+            "name": "Going Green: Pros and Cons of a Plant-Based Diet for Weight Loss ...",
+            "accentColor": "#AE231D",
+            "contentSize": "45751 B",
+            "hostPageUrl": "https://mynutrigene.com/pros-and-cons-of-a-plant-based-diet/",
+            "hostPageDisplayUrl": "https://mynutrigene.com/pros-and-cons-of-a-plant-based-diet",
+            "encodingFormat": "jpeg",
+            "height": 315,
+            "width": 474,
+            "contentUrl": "https://mynutrigene.com/wp-content/uploads/2023/04/plant-based-meal.jpg"
+          }
+        ]
+      },
+      {
+        "talkingPoint": "Transitioning to plant-based eating can be challenging. Some find it hard to find tasty and affordable options, and may struggle to get enough protein and other essential nutrients. But there are plenty of resources available, from cookbooks to meal delivery services, that can make the transition smoother.",
+        "title": "Navigating the challenges of transitioning to plant-based eating",
+        "voiceAudio": {
+          "urls": [
+            "https://res.cloudinary.com/drnm9lhef/video/upload/v1680956881/ea5a7ce412/en-IN-Standard-C-4adb34a534a742914ea174f08ade2629.wav",
+            "https://res.cloudinary.com/drnm9lhef/video/upload/v1680956881/ea5a7ce412/en-IN-Standard-D-4adb34a534a742914ea174f08ade2629.wav"
+          ],
+          "durations": [24.337792, 26.449958]
+        },
+        "images": [
+          {
+            "imageId": "FDC50C9F129D7D7C8CA5A473D16A04D5A5513A56",
+            "accentColor": "#C29C09",
+            "contentSize": "293316 B",
+            "encodingFormat": "jpeg",
+            "name": "Surprising Benefit of Plant-Based Diet What You Need to Know",
+            "width": 474,
+            "hostPageDisplayUrl": "https://www.megakitch.com/the-surprising-benefits-of-eating-a-plant-based-diet",
+            "height": 310,
+            "contentUrl": "https://www.megakitch.com/wp-content/uploads/2023/04/Eating-a-Plant-Based-Diet.png",
+            "hostPageUrl": "https://www.megakitch.com/the-surprising-benefits-of-eating-a-plant-based-diet/"
+          },
+          {
+            "contentUrl": "https://www.megakitch.com/wp-content/uploads/2023/04/The-Surprising-Benefits-of-Eating-a-Plant-Based-Diet.png",
+            "name": "Surprising Benefit of Plant-Based Diet What You Need to Know",
+            "height": 312,
+            "contentSize": "471148 B",
+            "encodingFormat": "jpeg",
+            "imageId": "FDC50C9F129D7D7C8CA5E61A0018885ADB913582",
+            "hostPageDisplayUrl": "https://www.megakitch.com/the-surprising-benefits-of-eating-a-plant-based-diet",
+            "accentColor": "#B94D12",
+            "width": 474,
+            "hostPageUrl": "https://www.megakitch.com/the-surprising-benefits-of-eating-a-plant-based-diet/"
+          },
+          {
+            "height": 315,
+            "hostPageUrl": "https://mynutrigene.com/pros-and-cons-of-a-plant-based-diet/",
+            "hostPageDisplayUrl": "https://mynutrigene.com/pros-and-cons-of-a-plant-based-diet",
+            "imageId": "9DAE53088FED18477C2306E6C8C5B56303F19DF3",
+            "name": "Going Green: Pros and Cons of a Plant-Based Diet for Weight Loss ...",
+            "width": 474,
+            "contentUrl": "https://mynutrigene.com/wp-content/uploads/2023/04/plant-based-meal.jpg",
+            "accentColor": "#AE231D",
+            "encodingFormat": "jpeg",
+            "contentSize": "45751 B"
+          }
+        ]
+      },
+      {
+        "voiceAudio": {
+          "durations": [29.967375, 32.626792],
+          "urls": [
+            "https://res.cloudinary.com/drnm9lhef/video/upload/v1680956881/ea5a7ce412/en-IN-Standard-C-518ed494886d1dddc8b938cc19bbc6a9.wav",
+            "https://res.cloudinary.com/drnm9lhef/video/upload/v1680956882/ea5a7ce412/en-IN-Standard-D-518ed494886d1dddc8b938cc19bbc6a9.wav"
+          ]
+        },
+        "images": [
+          {
+            "height": 310,
+            "hostPageUrl": "https://www.megakitch.com/the-surprising-benefits-of-eating-a-plant-based-diet/",
+            "width": 474,
+            "imageId": "FDC50C9F129D7D7C8CA5A473D16A04D5A5513A56",
+            "contentSize": "293316 B",
+            "accentColor": "#C29C09",
+            "contentUrl": "https://www.megakitch.com/wp-content/uploads/2023/04/Eating-a-Plant-Based-Diet.png",
+            "encodingFormat": "jpeg",
+            "hostPageDisplayUrl": "https://www.megakitch.com/the-surprising-benefits-of-eating-a-plant-based-diet",
+            "name": "Surprising Benefit of Plant-Based Diet What You Need to Know"
+          },
+          {
+            "accentColor": "#B94D12",
+            "width": 474,
+            "contentSize": "471148 B",
+            "hostPageUrl": "https://www.megakitch.com/the-surprising-benefits-of-eating-a-plant-based-diet/",
+            "encodingFormat": "jpeg",
+            "contentUrl": "https://www.megakitch.com/wp-content/uploads/2023/04/The-Surprising-Benefits-of-Eating-a-Plant-Based-Diet.png",
+            "name": "Surprising Benefit of Plant-Based Diet What You Need to Know",
+            "imageId": "FDC50C9F129D7D7C8CA5E61A0018885ADB913582",
+            "height": 312,
+            "hostPageDisplayUrl": "https://www.megakitch.com/the-surprising-benefits-of-eating-a-plant-based-diet"
+          },
+          {
+            "width": 474,
+            "name": "Going Green: Pros and Cons of a Plant-Based Diet for Weight Loss ...",
+            "hostPageDisplayUrl": "https://mynutrigene.com/pros-and-cons-of-a-plant-based-diet",
+            "height": 315,
+            "contentUrl": "https://mynutrigene.com/wp-content/uploads/2023/04/plant-based-meal.jpg",
+            "contentSize": "45751 B",
+            "hostPageUrl": "https://mynutrigene.com/pros-and-cons-of-a-plant-based-diet/",
+            "imageId": "9DAE53088FED18477C2306E6C8C5B56303F19DF3",
+            "accentColor": "#AE231D",
+            "encodingFormat": "jpeg"
+          }
+        ],
+        "title": "Expert praise for the health benefits of plant-based eating",
+        "talkingPoint": "Experts in nutrition and health praise plant-based eating, with some stating that it is one of the healthiest diets you can follow. Many celebrities and athletes also follow this lifestyle and have seen significant improvements in their health and energy levels. By making small changes, such as swapping out meat for plant-based proteins, you can start experiencing the benefits of a plant-based diet."
+      }
+    ]
+  }
+}

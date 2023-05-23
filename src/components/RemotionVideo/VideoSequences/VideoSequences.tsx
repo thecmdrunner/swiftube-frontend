@@ -17,8 +17,6 @@ import {
   getTimeOfTheDay,
 } from "~/utils";
 import { bgMusic, chaptersIntros, greetsAudios } from "~/lib/constants";
-// import Chart from "../Chart";
-// import Table from "../Table";
 
 const tabledata = {
   table:

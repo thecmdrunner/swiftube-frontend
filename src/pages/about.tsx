@@ -1,8 +1,11 @@
 // Taken from:
 // https://flowbite.com/blocks/publisher/blog-templates/
 
+import { LucideMail, LucideTwitter } from "lucide-react";
+import { LucideGithub } from "lucide-react";
 import Link from "next/link";
 import Base from "~/components/Base";
+import { Button } from "~/components/shadcnui/button";
 import fonts from "~/lib/fonts";
 
 const About = () => {
@@ -95,9 +98,27 @@ const About = () => {
             >
               Contact
             </h2>
-            <p className="my-4 font-semibold">
-              <i>Pending</i>
-            </p>
+            <div className="my-4 flex w-full flex-wrap gap-3">
+              <Link href="https://github.com/thecmdrunner/">
+                <Button className="h-12 rounded-full">
+                  <LucideGithub strokeWidth={1.3} className="h-8 w-8" />
+                </Button>
+              </Link>
+              <Link href="mailto:thecmdrunner@proton.me">
+                <Button className="h-12 rounded-full">
+                  <LucideMail strokeWidth={1.3} className="h-8 w-8" />
+                </Button>
+              </Link>
+              <Link href="https://twitter.com/thecmdrunner/">
+                <Button className="h-12 rounded-full">
+                  <LucideTwitter
+                    strokeWidth={0}
+                    fill="white"
+                    className="h-8 w-8"
+                  />
+                </Button>
+              </Link>
+            </div>
           </article>
         </div>
       </main>

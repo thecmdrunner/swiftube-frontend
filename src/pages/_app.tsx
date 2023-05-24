@@ -3,6 +3,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 import { MantineProvider } from "@mantine/core";
 import { api } from "~/utils/api";
 import "~/styles/globals.css";
+import { Analytics } from "@vercel/analytics/react";
 
 // * Page protection Taken from:
 // https://beta-docs.clerk.com/quickstarts/nextjs/stable
@@ -55,6 +56,8 @@ const MyApp: AppType = ({ Component, pageProps }) => {
         <Component {...pageProps} />
       </MantineProvider>
       {/* </ErrorBoundary> */}
+
+      <Analytics />
 
       {/* 
       {isPublicPage ? (

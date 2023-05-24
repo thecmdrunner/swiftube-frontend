@@ -22,84 +22,6 @@ import type {
 } from "~/lib/interfaces";
 import { getSectionDurationInFrames, type getTimeOfTheDay } from "~/utils";
 
-// const VideoIntro = (props: {
-//   videoData: FinalVideoDataFromServer;
-//   videoMetadata: PresentationMetadata;
-// }) => {
-//   const introImages = props.videoData.data.intro.images;
-
-//   return (
-//     <AbsoluteFill className="bg-white">
-//       <div className="flex h-max w-full flex-row flex-nowrap items-center justify-center px-2 py-8">
-//         <h2 className="w-full rounded-3xl bg-blue-800 px-10 text-center text-7xl font-bold leading-loose text-emerald-400">
-//           <span className={`${fonts.unbounded.className}`}>
-//             {props.videoData.metadata.topic}
-//           </span>
-//         </h2>
-//       </div>
-
-//       <div className="flex h-96 w-full flex-row flex-nowrap items-start justify-center gap-4 px-2">
-//         {Array.isArray(introImages) &&
-//           introImages.map((imgData, index) => (
-//             <div
-//               key={index}
-//               style={{
-//                 width: `${Math.floor((1 / introImages.length) * 100)}%`,
-//                 backgroundImage: `url(${imgData.contentUrl})`,
-//               }}
-//               className="h-[40rem] rounded-3xl border-0 border-solid border-black bg-cover bg-center"
-//             ></div>
-//           ))}
-//       </div>
-
-//       {/* <div className="mt-8 flex h-max w-full flex-row flex-nowrap items-start justify-center px-2">
-//         {Array.isArray(introImages) &&
-//           introImages.map((imgData, index) => (
-//             // <div
-//             //   className="h-40 w-52 bg-cover bg-center"
-//             //   key={imgData.imageId}
-//             //   style={{
-//             //     backgroundImage: `url(${imgData.contentUrl})`,
-//             //   }}
-//             // ></div>
-//             // eslint-disable-next-line @next/next/no-img-element
-
-//             <Img
-//               key={index}
-//               className={`h- mx-1 rounded-2xl border-2 border-solid border-black bg-no-repeat shadow-lg`}
-//               style={{
-//                 width: `${Math.floor((1 / introImages.length) * 100)}%`,
-//               }}
-//               alt={imgData.name}
-//               src={imgData.contentUrl}
-//             />
-
-//             // <Img
-//             //   // style={{
-//             //   //   height: `${Math.round(
-//             //   //     (1 / videoData.data.intro.images!.length || 2) * 100
-//             //   //   )}%`,
-//             //   // }}
-//             //   className={`w-fit max-w-full h-[${Math.round(
-//             //     (1 / videoData.data.intro.images!.length || 2) * 100
-//             //   )}%]`}
-//             //   key={imgData.imageId}
-//             //   src={imgData.contentUrl}
-//             // />
-//           ))}
-//       </div> */}
-
-//       <Audio
-//         src={
-//           props.videoData.data.intro.voiceAudio.urls[
-//             props.videoMetadata.speakingVoiceGender === "male" ? 0 : 1
-//           ]
-//         }
-//       />
-//     </AbsoluteFill>
-//   );
-// };
-
 const VideoIntro = (props: {
   videoData: FinalVideoDataFromServer;
   videoMetadata: PresentationMetadata;
@@ -111,8 +33,6 @@ const VideoIntro = (props: {
 
   const voiceIndex = props.videoMetadata.speakingVoiceGender === "male" ? 0 : 1;
 
-  //
-  //
   const isTablePresent = props.videoData.data.table.isPresent;
 
   const totalSections = props.videoData.data.videoSections.length;
@@ -136,7 +56,7 @@ const VideoIntro = (props: {
 
   const IntroAudioURL = props.videoData.data.intro.voiceAudio.urls[voiceIndex];
 
-  const chaptersIntroURL = chaptersIntros.audioURLs[voiceIndex];
+  // const chaptersIntroURL = chaptersIntros.audioURLs[voiceIndex];
 
   // Preload Intro Background Music
   useEffect(() => preloadAudio(bgMusic.videoSections), []);
@@ -268,7 +188,7 @@ const VideoIntro = (props: {
 
           {/* Chapters Intro */}
           <Series.Sequence durationInFrames={introChaptersDuration}>
-            <Audio src={chaptersIntroURL} />
+            {/* <Audio src={chaptersIntroURL} /> */}
 
             <div className="m-auto mt-48 flex flex-col items-center justify-center">
               <div
@@ -279,7 +199,7 @@ const VideoIntro = (props: {
                 }`}
               >
                 <Video
-                  muted
+                  // muted
                   style={{
                     marginLeft:
                       props.videoMetadata.speakingVoiceGender === "male"

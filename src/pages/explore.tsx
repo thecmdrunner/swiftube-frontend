@@ -42,7 +42,7 @@ export default function Explore() {
                       style={{
                         backgroundImage: `url(${image.contentUrl})`,
                       }}
-                      className="render h-full w-1/3 bg-red-300 bg-cover bg-center bg-no-repeat blur-[1px]"
+                      className="render h-full w-1/3 bg-gray-100 bg-cover bg-center bg-no-repeat blur-[1px]"
                     >
                       {/* <img
                         className="object-fill object-center"

@@ -104,7 +104,7 @@ const About = () => {
                   <LucideGithub strokeWidth={1.3} className="h-8 w-8" />
                 </Button>
               </Link>
-              <Link href="mailto:thecmdrunner@proton.me">
+              <Link href="mailto:thecmdrunner@proton.me?subject=Swiftube&body=Hello!%20I'd%20love%20to%20know%20more%20about%20Swiftube%20%3A)">
                 <Button className="h-12 rounded-full">
                   <LucideMail strokeWidth={1.3} className="h-8 w-8" />
                 </Button>

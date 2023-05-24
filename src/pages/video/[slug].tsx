@@ -381,7 +381,7 @@ const WatchVideo = () => {
     ? `https://swiftube.vercel.app/video/${data?.video.uniqueId}`
     : `https://swiftube.vercel.app/`;
 
-  const shareText = `Hey! I just discovered Swiftube, it's like ChatGPT but for Videos, powered by @Remotion!\n\nCheck it out:\n${thisVideoLink}`;
+  const shareText = `Hey! I just discovered Swiftube, it's like ChatGPT but for Videos, powered by @Remotion! \n\nCheck it out:\n${thisVideoLink}`;
   return (
     <Base>
       <div className="mx-auto flex flex-col px-3 lg:max-w-7xl">
@@ -436,7 +436,7 @@ const WatchVideo = () => {
                       />
                     </Button>
                   </Link>
-                  <Link href="mailto:thecmdrunner@proton.me?subject=Swiftube&body=Hello!%20I'd%20love%20to%20know%20more%20about%20Swiftube%20%3A)">
+                  <Link href={`mailto:?subject=Swiftube&body=${shareText}`}>
                     <Button
                       size={"sm"}
                       className="rounded-lg"

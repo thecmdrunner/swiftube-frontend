@@ -61,7 +61,9 @@ export default function Explore() {
                     {video.title || video.topic}
                   </div>
                   <div className="mt-1.5 flex items-center space-x-1">
-                    <div className="text-gray-600">John Parker</div>
+                    <div className="text-gray-600">
+                      {index % 2 === 0 ? "Jenny Parker" : "John Parker"}
+                    </div>
 
                     <LucideVerified
                       stroke="white"

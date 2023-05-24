@@ -214,7 +214,7 @@ const Test = () => {
               onChange={(e) => setReferenceData(e.target.value)}
               value={referenceData}
               className="mx-auto min-h-[9rem]"
-              placeholder="(required) Please provide a paragraph or two describing the main content you would like to see in the video."
+              placeholder="(required) Please provide the raw contents of the video, at least a paragraph or two, on which the video will be based on."
             />
 
             <div className="flex w-full items-center justify-between gap-3">

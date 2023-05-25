@@ -10,7 +10,7 @@ const Admin = () => {
   const { isSignedIn, user, isLoaded: isUserLoaded } = useUser();
   const isAdmin = !!user?.publicMetadata.isAdmin;
 
-  const { data, error, isError } = api.admin.hello.useQuery({ text: "Pranav" });
+  const { data, error, isError } = api.admin.hello.useQuery({ text: "there" });
   const { data: allVideos, isSuccess: didVideosLoad } =
     api.admin.getAllVideos.useQuery(undefined, {
       enabled: isUserLoaded && isAdmin,
@@ -75,11 +75,9 @@ const Admin = () => {
                           <span>
                             {vid.status === "SUCCESS"
                               ? vid?.metadata?.title || vid?.metadata?.topic
-                              : vid.status === "FAILED" ||
-                                vid.status === "HALTED" ||
-                                vid.status === "DELETED"
+                              : vid?.error
                               ? `ERR: ${vid?.error}`
-                              : ""}
+                              : `Msg: ${vid?.message}`}
                           </span>
                         </div>
                       )}

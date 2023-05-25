@@ -13,7 +13,7 @@ import {
   initializeNewVideo,
   getCustomerDetails,
   getVideoFromDB,
-  getVideos,
+  getVideosByIds,
   getSafePublicVideos,
 } from "~/lib/firebase/firestore/utils";
 import { redis } from "~/lib/upstash";
@@ -37,7 +37,7 @@ export const dbRouter = createTRPCRouter({
       // ! Here you may filter those which are "Halted" or "Flagged" etc.
       const ids = input.videos.map((item) => item.videoId);
 
-      videos = await getVideos(ids);
+      videos = await getVideosByIds(ids);
 
       return { videos, showExamplesInstead };
     }),

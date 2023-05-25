@@ -382,7 +382,18 @@ export async function getSafePublicVideos(): Promise<
     return [];
   }
 }
-export async function getVideos(
+
+export async function getAllVideos(): Promise<FinalVideoDataFromServer[] | []> {
+  const docs = await getDocs(videoCollectionRef);
+
+  const videos: FinalVideoDataFromServer[] = [];
+
+  docs.forEach((doc) => videos.push(doc.data() as FinalVideoDataFromServer));
+
+  return videos;
+}
+
+export async function getVideosByIds(
   videoIds: string[]
 ): Promise<FinalVideoDataFromServer[] | []> {
   const fetchPromises = videoIds.map((id) => getVideoFromDB(id));

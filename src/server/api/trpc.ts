@@ -59,7 +59,7 @@ export const createTRPCContext = (opts: CreateNextContextOptions) => {
 import { TRPCError, initTRPC } from "@trpc/server";
 import superjson from "superjson";
 import { ZodError } from "zod";
-import { getAuth } from "@clerk/nextjs/server";
+import { clerkClient, getAuth } from "@clerk/nextjs/server";
 
 const t = initTRPC.context<typeof createTRPCContext>().create({
   transformer: superjson,
@@ -113,4 +113,26 @@ const enforceUserIsAuthenticated = t.middleware(async ({ ctx, next }) => {
   });
 });
 
+const enforceUserIsAdmin = t.middleware(async ({ ctx, next }) => {
+  const [user] = await clerkClient.users.getUserList({
+    userId: [ctx.userSession.userId!],
+  });
+
+  const userPublicMetadata = user?.publicMetadata as { isAdmin?: boolean };
+
+  if (!!!userPublicMetadata?.isAdmin)
+    throw new TRPCError({
+      code: "UNAUTHORIZED",
+      message: "You're not an admin.",
+    });
+
+  return next({
+    ctx: {
+      userSession: ctx.userSession,
+      opts: ctx.opts,
+    },
+  });
+});
+
 export const privateProcedure = t.procedure.use(enforceUserIsAuthenticated);
+export const adminProcedure = privateProcedure.use(enforceUserIsAdmin);

@@ -1,4 +1,4 @@
-![banner](https://github.com/thecmdrunner/swiftube-frontend/assets/38887390/8a5be7f4-a1e8-4854-ad82-c51fafda1b1b)
+![swiftube-banner](https://github.com/thecmdrunner/swiftube-frontend/assets/38887390/c043b912-0054-4289-970d-b95d5d749fd6)
 
 # Swiftube
 

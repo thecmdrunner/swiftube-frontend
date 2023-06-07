@@ -150,21 +150,22 @@ export const chaptersIntros: {
 };
 
 export const URLs = {
-  signIn: "/sign-in",
-  signUp: "/sign-up",
-
-  render: env.NEXT_PUBLIC_RENDER_BACKEND_URL,
-  railway: env.NEXT_PUBLIC_RAILWAY_BACKEND_URL,
-
-  server: env.NEXT_PUBLIC_SERVER_BACKEND_URL,
-  localhost: "http://localhost:5000",
-
+  // Public
   home: "/",
   about: "/about",
   explore: "/explore",
   pricing: "/pricing",
+  signIn: "/sign-in",
+  signUp: "/sign-up",
 
+  // Private
   create: "/create",
+
+  // Backends
+  render: env.NEXT_PUBLIC_RENDER_BACKEND_URL,
+  railway: env.NEXT_PUBLIC_RAILWAY_BACKEND_URL,
+  server: env.NEXT_PUBLIC_SERVER_BACKEND_URL,
+  localhost: "http://localhost:5000",
 };
 
 export const BACKEND_API_URL = URLs.railway;

@@ -1,4 +1,9 @@
-import { LucideFileVideo2, LucideHeart, LucidePlus } from "lucide-react";
+import {
+  LucideFileVideo2,
+  LucideHeart,
+  LucidePlus,
+  LucideWand2,
+} from "lucide-react";
 import { type NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
@@ -99,8 +104,8 @@ const Home: NextPage = () => {
               <div className="mx-auto mt-8 flex flex-col items-center justify-center gap-y-3">
                 <MenuItem
                   href="/create"
-                  icon={<LucidePlus />}
-                  label="Create new video"
+                  icon={<LucideWand2 />}
+                  label="Get started"
                 />
 
                 <MenuItem

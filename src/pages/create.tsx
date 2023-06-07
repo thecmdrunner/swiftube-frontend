@@ -302,7 +302,7 @@ ${
 
       <section className="w-full md:max-w-sm">
         <h2 className="mb-2 flex scroll-m-20 gap-x-3 pb-5 text-2xl font-semibold first:mt-0">
-          <LucideFileVideo className="h-8 w-8" /> Previously created
+          <LucideFileVideo className="h-8 w-8" /> Previous Projects
         </h2>
 
         {/* When user created video list is not empty */}

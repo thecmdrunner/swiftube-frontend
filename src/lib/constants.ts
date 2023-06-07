@@ -149,7 +149,7 @@ export const chaptersIntros: {
   durations: [13.46, 14.3],
 };
 
-export const URLS = {
+export const URLs = {
   signIn: "/sign-in",
   signUp: "/sign-up",
 
@@ -158,9 +158,16 @@ export const URLS = {
 
   server: env.NEXT_PUBLIC_SERVER_BACKEND_URL,
   localhost: "http://localhost:5000",
+
+  home: "/",
+  about: "/about",
+  explore: "/explore",
+  pricing: "/pricing",
+
+  create: "/create",
 };
 
-export const BACKEND_API_URL = URLS.railway;
+export const BACKEND_API_URL = URLs.railway;
 
 export const WakeUpFromColdStartURL = BACKEND_API_URL;
 

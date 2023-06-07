@@ -1,15 +1,9 @@
-import {
-  LucideFileVideo2,
-  LucideHeart,
-  LucidePlus,
-  LucideWand2,
-} from "lucide-react";
+import { LucideFileVideo2, LucideHeart, LucideWand2 } from "lucide-react";
 import { type NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
 import type { ReactNode } from "react";
 // import Link from "next/link";
-import Base from "~/components/Base";
 import Navbar from "~/components/Navbar";
 import { Button } from "~/components/shadcnui/button";
 import fonts from "~/lib/fonts";

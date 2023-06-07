@@ -40,8 +40,12 @@ export const env = createEnv({
     NEXT_PUBLIC_SERVER_BACKEND_URL: z.string().url(),
     NEXT_PUBLIC_RENDER_BACKEND_URL: z.string().url(),
     NEXT_PUBLIC_RAILWAY_BACKEND_URL: z.string().url(),
-    NEXT_PUBLIC_HIGHLIGHT_PROJECT_ID: z.string()
+    NEXT_PUBLIC_HIGHLIGHT_PROJECT_ID: z.string(),
     // NEXT_PUBLIC_CLIENTVAR: z.string().min(1),
+
+    NEXT_PUBLIC_APPWRITE_ENDPOINT: z.string(),
+    NEXT_PUBLIC_APPWRITE_PROJECT_ID: z.string(),
+
   },
 
   /**
@@ -62,6 +66,9 @@ export const env = createEnv({
 
     DATABASE_URL: process.env.DATABASE_URL,
     NODE_ENV: process.env.NODE_ENV,
+
+    NEXT_PUBLIC_APPWRITE_ENDPOINT: process.env.NEXT_PUBLIC_APPWRITE_ENDPOINT,
+    NEXT_PUBLIC_APPWRITE_PROJECT_ID: process.env.NEXT_PUBLIC_APPWRITE_PROJECT_ID,
 
     FIREBASE_API_KEY: process.env.FIREBASE_API_KEY,
     FIREBASE_AUTH_DOMAIN: process.env.FIREBASE_AUTH_DOMAIN,

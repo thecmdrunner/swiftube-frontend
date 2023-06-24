@@ -76,8 +76,8 @@ const Home: NextPage = () => {
                     </div>
                     <div>
                       <p className="text-sm font-medium text-blue-600">
-                        Thank you for testing the beta. Working on full release
-                        now!
+                        Thank you for testing the beta! Working on full release
+                        now.
                       </p>
                     </div>
                     <div>

@@ -15,8 +15,8 @@ import {
   getVideoFromDB,
   getVideosByIds,
   getSafePublicVideos,
+  getCompletedVideos,
 } from "~/lib/firebase/firestore/utils";
-import { redis } from "~/lib/upstash";
 
 export const dbRouter = createTRPCRouter({
   getVideosByIds: privateProcedure
@@ -57,7 +57,7 @@ export const dbRouter = createTRPCRouter({
       const videoData = await getVideoFromDB(input.videoId);
       return { video: videoData };
     }),
-  getSafeVideos: publicProcedure.query(async () => {
+  getSafeVideos: privateProcedure.query(async () => {
     const safeVideos = await getSafePublicVideos();
 
     const videos: {
@@ -93,6 +93,10 @@ export const dbRouter = createTRPCRouter({
 
     return { videos };
   }),
+  getCompletedVideos: privateProcedure.query(async () => {
+    const safeVideos = await getCompletedVideos();
+    return { videos: safeVideos };
+  }),
 
   createVideo: privateProcedure
     .input(
@@ -120,13 +124,5 @@ export const dbRouter = createTRPCRouter({
       else console.log("⛏️ New video creation response was success");
 
       return data;
-    }),
-
-  hello: publicProcedure
-    .input(z.object({ text: z.string() }))
-    .query(({ input }) => {
-      return {
-        greeting: `Hello ${input.text}`,
-      };
     }),
 });

@@ -40,7 +40,7 @@ import {
   LucideTwitter,
   LucideX,
 } from "lucide-react";
-import { Button } from "~/components/shadcnui/button";
+import { Button } from "~/components/ui/button";
 import { Tooltip } from "@mantine/core";
 import { LucideTrash2 } from "lucide-react";
 import Link from "next/link";

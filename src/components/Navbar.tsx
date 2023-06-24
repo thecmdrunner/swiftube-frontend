@@ -5,7 +5,7 @@ import { UserButton, useUser } from "@clerk/nextjs";
 import { LucidePlay } from "lucide-react";
 import Link from "next/link";
 import fonts from "~/lib/fonts";
-import { Button } from "./shadcnui/button";
+import { Button } from "./ui/button";
 
 const Navbar = () => {
   // const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -13,7 +13,7 @@ const Navbar = () => {
   const { isSignedIn } = useUser();
 
   return (
-    <nav className="fixed left-0 top-0 z-20 w-full border-0 border-gray-200 bg-white">
+    <nav className="fixed left-0 top-0 z-20 w-full border-0 border-gray-200 bg-white/70 backdrop-blur-sm	">
       <div className="mx-auto flex max-w-screen-xl justify-between px-8 py-4 md:flex-wrap md:items-center">
         <Link
           href="/"
@@ -38,7 +38,7 @@ const Navbar = () => {
           <p
             className={`${fonts.unbounded.className} self-center whitespace-nowrap font-semibold`}
           >
-            Swiftube ⚡
+            Swiftube
           </p>
         </Link>
         <div className="flex items-center gap-3 md:order-2">
@@ -57,7 +57,7 @@ const Navbar = () => {
           </Link> */}
 
           <Link href={"/about"}>
-            <Button className="rounded-full" variant={"secondary"}>
+            <Button className="rounded-full" variant={"default"}>
               About
             </Button>
           </Link>

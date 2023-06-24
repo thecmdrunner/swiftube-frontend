@@ -3,7 +3,7 @@ import { type ReactNode } from "react";
 import Navbar from "./Navbar";
 import fonts from "~/lib/fonts";
 import Link from "next/link";
-import { Button } from "./shadcnui/button";
+import { Button } from "./ui/button";
 
 const Base = (props: { children: ReactNode }) => {
   return (

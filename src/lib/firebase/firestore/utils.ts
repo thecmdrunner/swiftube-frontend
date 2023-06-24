@@ -382,6 +382,27 @@ export async function getSafePublicVideos(): Promise<
     return [];
   }
 }
+export async function getCompletedVideos(): Promise<
+  FinalVideoDataFromServer[] | []
+> {
+  try {
+    const q = query(videoCollectionRef, where("status", "==", "SUCCESS"));
+    const videos: FinalVideoDataFromServer[] = [];
+
+    const querySnapshot = await getDocs(q);
+
+    querySnapshot.forEach((doc) => {
+      return videos.push(doc.data() as FinalVideoDataFromServer);
+      // doc.data() is never undefined for query doc snapshots
+      // console.log(doc.id, " => ", doc.data());
+    });
+
+    return videos;
+  } catch (error) {
+    console.error(error);
+    return [];
+  }
+}
 
 export async function getAllVideos(): Promise<FinalVideoDataFromServer[] | []> {
   const docs = await getDocs(videoCollectionRef);

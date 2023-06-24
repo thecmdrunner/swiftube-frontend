@@ -5,7 +5,7 @@ import { LucideMail, LucideTwitter } from "lucide-react";
 import { LucideGithub } from "lucide-react";
 import Link from "next/link";
 import Base from "~/components/Base";
-import { Button } from "~/components/shadcnui/button";
+import { Button } from "~/components/ui/button";
 import fonts from "~/lib/fonts";
 
 const About = () => {

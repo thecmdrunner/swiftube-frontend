@@ -1,36 +1,16 @@
-import {
-  LucideFileVideo2,
-  LucideHeart,
-  LucidePlus,
-  LucideWand2,
-} from "lucide-react";
+import { CheckCircle, LucideHeart, LucideVerified, X } from "lucide-react";
 import { type NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
-import type { ReactNode } from "react";
+import { useState, type ReactNode } from "react";
 // import Link from "next/link";
-import Base from "~/components/Base";
 import Navbar from "~/components/Navbar";
-import { Button } from "~/components/shadcnui/button";
+import { Button } from "~/components/ui/button";
+import { CHANNEL_LOGOS, explorableVideos } from "~/lib/constants";
 import fonts from "~/lib/fonts";
 
 const Home: NextPage = () => {
-  // const defaultKey = "metadataPrompt_system";
-  // const defaultKey = "metadataPrompts";
-
-  // const { isLoading, refetch } = api.db.getDataFromRedis.useQuery({
-  //   key: defaultKey,
-  // });
-
-  // const { mutate } = api.db.setDataInRedis.useMutation({
-  //   onSuccess: () => void refetch(),
-  // });
-
-  // const [redisKey, setRedisKey] = useState(defaultKey);
-
-  // const [prompt, setPrompt] = useState("");
-
-  // if (!!isLoading) return <divLoading...</div>;
+  const [toShowExamples, setToShowExamples] = useState(true);
 
   const MenuItem = (props: {
     href: string;
@@ -61,7 +41,7 @@ const Home: NextPage = () => {
         <Navbar />
         <section className="pb-2 pt-[4.5rem]">
           <div className="relative isolate z-0 bg-white px-6 lg:px-8">
-            <div className="relative mx-auto max-w-2xl pt-16">
+            <div className="relative mx-auto max-w-4xl pt-8">
               <div className="absolute inset-x-0 -top-[4rem] -z-10 transform-gpu overflow-hidden blur-3xl md:-top-[10rem]">
                 {/* <svg
               className="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]"
@@ -89,10 +69,26 @@ const Home: NextPage = () => {
             </svg> */}
               </div>
               <div className="mx-auto text-center">
+                <div className="mx-auto mb-8 max-w-xl rounded-md border-l-4 border-blue-500 bg-blue-100 p-4">
+                  <div className="flex items-center justify-between space-x-4">
+                    <div>
+                      <CheckCircle className="h-6 w-6 text-blue-600" />
+                    </div>
+                    <div>
+                      <p className="text-sm font-medium text-blue-600">
+                        Thank you for testing the beta. Working on full release
+                        now!
+                      </p>
+                    </div>
+                    <div>
+                      {/* <X className="h-6 w-6 cursor-pointer text-blue-600" /> */}
+                    </div>
+                  </div>
+                </div>
                 <h1
-                  className={`${fonts.k2d.className} text-4xl font-extrabold leading-relaxed text-gray-900 sm:text-6xl`}
+                  className={`${fonts.k2d.className} mx-auto max-w-2xl text-4xl font-extrabold leading-relaxed text-gray-900 sm:text-6xl`}
                 >
-                  Create videos Swiftly with AI.
+                  Create videos Swiftly with AI. ✨
                   {/* Make videos with AI in 120 seconds */}
                 </h1>
                 <p className="mt-6 text-lg leading-8 text-gray-600">
@@ -101,19 +97,7 @@ const Home: NextPage = () => {
                   {`Just write a prompt, supply some content, and the video is ready!`}
                 </p>
               </div>
-              <div className="mx-auto mt-8 flex flex-col items-center justify-center gap-y-3">
-                <MenuItem
-                  href="/create"
-                  icon={<LucideWand2 />}
-                  label="Get started"
-                />
-
-                <MenuItem
-                  href="/explore"
-                  icon={<LucideFileVideo2 />}
-                  label="See examples"
-                />
-
+              <div className="mx-auto mt-4 flex flex-col items-center justify-center gap-y-3">
                 <Link
                   href={"https://github.com/thecmdrunner/swiftube-frontend"}
                 >
@@ -129,7 +113,7 @@ const Home: NextPage = () => {
                   </Button>
                 </Link>
 
-                <h4 className="flex scroll-m-20 items-center text-lg font-medium">
+                <h4 className="mx-auto flex scroll-m-20 flex-wrap items-center text-center text-lg font-medium">
                   Made with{" "}
                   <LucideHeart
                     className="px-0.5"
@@ -145,55 +129,91 @@ const Home: NextPage = () => {
                   </Link>
                 </h4>
               </div>
+
+              <h2 className="mx-auto mt-16 w-max scroll-m-20 border-b pb-2 text-center text-xl font-medium tracking-tight transition-colors sm:text-3xl">
+                Checkout videos created by users 👇
+              </h2>
+
+              <div
+                className={
+                  "container mx-auto flex w-full max-w-7xl flex-col items-center justify-center gap-6 py-12 sm:flex-row sm:flex-wrap"
+                }
+              >
+                {explorableVideos.map((video, index) => {
+                  return (
+                    <div
+                      className={`${fonts.inter.className} block h-auto w-11/12 sm:w-64`}
+                      key={index}
+                    >
+                      <div className="flex aspect-video flex-nowrap overflow-hidden rounded-lg bg-gray-100">
+                        {video.data.intro?.images &&
+                          video.data.intro.images?.map((image, index) => (
+                            <div
+                              key={index}
+                              style={{
+                                backgroundImage: `url(${image.contentUrl})`,
+                              }}
+                              className="render h-full w-1/3 bg-gray-100 bg-cover bg-center bg-no-repeat blur-[1px]"
+                            >
+                              {/* <img
+                        className="object-fill object-center"
+                        src={image.contentUrl}
+                        alt={image.name}
+                      /> */}
+                            </div>
+                          ))}
+                      </div>
+                      <div className="mt-3 flex items-start space-x-2">
+                        <div className="mr-1.5 h-9 w-9 flex-shrink-0 overflow-hidden rounded-full bg-white">
+                          <img
+                            src={CHANNEL_LOGOS.digital_artist}
+                            alt="channel_logo"
+                          />
+                        </div>
+                        <div className="text-md flex flex-col leading-snug">
+                          <div className="overflow-ellipsis">
+                            <Link href={`/video/${video.uniqueId}`}>
+                              {video.metadata.title || video.metadata.topic}
+                            </Link>
+                          </div>
+                          <div className="mt-1.5 flex items-center space-x-1">
+                            <div className="text-gray-600">
+                              {index % 2 === 0 ? "Jenny Parker" : "John Parker"}
+                            </div>
+
+                            <LucideVerified
+                              stroke="white"
+                              strokeWidth={1.4}
+                              className="fill-[#369FE8]"
+                            />
+                          </div>
+                          <div className="mt-0.5 text-sm text-gray-400">
+                            9K views
+                          </div>
+                          {/* <div className="mt-1 w-max rounded-sm border border-red-500 px-1 py-0.5 text-xs font-bold tracking-wide text-red-600">
+                    LIVE NOW
+                  </div> */}
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+
+              {/*
+                <MenuItem
+                  href="/create"
+                  icon={<LucideWand2 />}
+                  label="Get started"
+                />
+
+                <MenuItem
+                  href="/explore"
+                  icon={<LucideFileVideo2 />}
+                  label="See examples"
+                />*/}
             </div>
           </div>
-
-          {/* <ul className="grid grid-cols-1 gap-4 bg-slate-50 p-4 text-sm leading-6 sm:grid-cols-2 sm:px-8 sm:pb-8 sm:pt-6 lg:grid-cols-1 lg:p-4 xl:grid-cols-2 xl:px-8 xl:pb-8 xl:pt-6">
-        {[0, 0].map((item, index) => (
-          <li key={index}>
-            <a className="group rounded-md bg-white p-3 shadow-sm ring-1 ring-slate-200 hover:bg-blue-500 hover:shadow-md hover:ring-blue-500">
-              <dl className="grid grid-cols-2 grid-rows-2 items-center sm:block lg:grid xl:block">
-                <div>
-                  <dt className="sr-only">Title</dt>
-                  <dd className="font-semibold text-slate-900 group-hover:text-white">
-                    project.title
-                  </dd>
-                </div>
-                <div>
-                  <dt className="sr-only">Category</dt>
-                  <dd className="group-hover:text-blue-200">
-                    project.category
-                  </dd>
-                </div>
-                <div className="col-start-2 row-start-1 row-end-3 sm:mt-4 lg:mt-0 xl:mt-4">
-                  <dt className="sr-only">Users</dt>
-                  <dd
-                    x-for="user in project.users"
-                    className="flex justify-end -space-x-1.5 sm:justify-start lg:justify-end xl:justify-start"
-                  >
-                    <img
-                      src="user.avatar"
-                      alt="user.name"
-                      className="h-6 w-6 rounded-full bg-slate-100 ring-2 ring-white"
-                      loading="lazy"
-                    />
-                  </dd>
-                </div>
-              </dl>
-            </a>
-          </li>
-        ))}
-
-        <li className="flex">
-          <Link
-            href="/create"
-            className="group flex w-full flex-col items-center justify-center rounded-md border-2 border-dashed border-slate-300 py-3 text-sm font-medium leading-6 text-slate-900 hover:border-solid hover:border-indigo-500 hover:bg-white hover:text-indigo-500"
-          >
-            <LucidePlus className="mb-1 text-slate-400 group-hover:text-indigo-500" />
-            New video
-          </Link>
-        </li>
-      </ul> */}
         </section>
       </main>
     </>

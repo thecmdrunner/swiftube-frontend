@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Button } from "~/components/shadcnui/button";
+import { Button } from "~/components/ui/button";
 
 const SignUpPage = () => (
   <main className="flex h-screen flex-col items-center justify-start bg-gray-900 py-16">

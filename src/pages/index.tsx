@@ -141,8 +141,9 @@ const Home: NextPage = () => {
               >
                 {explorableVideos.map((video, index) => {
                   return (
-                    <div
-                      className={`${fonts.inter.className} block h-auto w-11/12 sm:w-64`}
+                    <Link
+                      href={`/video/${video.uniqueId}`}
+                      className={`${fonts.inter.className} block h-72 w-11/12 sm:w-64`}
                       key={index}
                     >
                       <div className="flex aspect-video flex-nowrap overflow-hidden rounded-lg bg-gray-100">
@@ -172,9 +173,7 @@ const Home: NextPage = () => {
                         </div>
                         <div className="text-md flex flex-col leading-snug">
                           <div className="overflow-ellipsis">
-                            <Link href={`/video/${video.uniqueId}`}>
-                              {video.metadata.title || video.metadata.topic}
-                            </Link>
+                            {video.metadata.title || video.metadata.topic}
                           </div>
                           <div className="mt-1.5 flex items-center space-x-1">
                             <div className="text-gray-600">
@@ -195,7 +194,7 @@ const Home: NextPage = () => {
                   </div> */}
                         </div>
                       </div>
-                    </div>
+                    </Link>
                   );
                 })}
               </div>

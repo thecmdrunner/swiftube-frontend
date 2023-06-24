@@ -10,6 +10,8 @@ export default authMiddleware({
     URLs.pricing,
     URLs.explore,
 
+    "/video(.*)",
+
     // ! All APIs
     "/api(.*)",
   ],

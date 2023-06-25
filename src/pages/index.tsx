@@ -131,7 +131,7 @@ const Home: NextPage = () => {
               </div>
 
               <h2 className="mx-auto mt-16 w-max scroll-m-20 border-b pb-2 text-center text-xl font-medium tracking-tight transition-colors sm:text-3xl">
-                Checkout videos created by users 👇
+                Checkout videos created by our users 👇
               </h2>
 
               <div

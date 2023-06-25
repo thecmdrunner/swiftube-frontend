@@ -43,7 +43,7 @@ const About = () => {
                 </div>
               </address>
               <h1 className="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl">
-                Launch Swiftube v0.1
+                Swiftube v0.1 Beta
               </h1>
             </header>
 
@@ -55,13 +55,13 @@ const About = () => {
               ready in a minute or two!
             </p>
 
-            <h2 className="mb-4 text-2xl font-extrabold leading-tight text-gray-900 lg:my-6 lg:text-3xl">
+            {/* <h2 className="mb-4 text-2xl font-extrabold leading-tight text-gray-900 lg:my-6 lg:text-3xl">
               How to use?
             </h2>
 
             <p className="my-4 font-semibold">
               <i>Pending</i>
-            </p>
+            </p> */}
 
             <p className="my-4 font-semibold">
               Swiftube makes use of these core technologies under the hood:

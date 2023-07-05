@@ -447,7 +447,10 @@ const WatchVideo = () => {
                   </Link>
 
                   <Link
-                    href={`whatsapp://send?text=${encodeURIComponent(
+                    // href={`whatsapp://send?text=${encodeURIComponent(
+                    //   shareText
+                    // )}`}
+                    href={`https://api.whatsapp.com/send?text=${encodeURIComponent(
                       shareText
                     )}`}
                   >

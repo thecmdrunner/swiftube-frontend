@@ -1,3 +1,5 @@
+# ℹ️ This is the repo for the now outdated alpha version. I'm working on the final release, which will be vastly better suited for production use!
+
 ![swiftube-banner](https://github.com/thecmdrunner/swiftube-frontend/assets/38887390/c043b912-0054-4289-970d-b95d5d749fd6)
 
 # Swiftube

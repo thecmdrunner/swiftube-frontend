@@ -43,7 +43,7 @@ const About = () => {
                 </div>
               </address>
               <h1 className="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl">
-                Swiftube v0.1 Beta
+                Swiftube v0.1 Alpha
               </h1>
             </header>
 

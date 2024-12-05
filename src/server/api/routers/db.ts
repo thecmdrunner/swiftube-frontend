@@ -1,22 +1,22 @@
 import { z } from "zod";
+import { explorableVideos } from "~/lib/constants";
+import {
+  getCompletedVideos,
+  getCustomerDetails,
+  getSafePublicVideos,
+  getVideosByIds,
+  initializeNewVideo,
+} from "~/lib/firebase/firestore/utils";
 import {
   createTRPCRouter,
   privateProcedure,
   publicProcedure,
 } from "~/server/api/trpc";
 import {
+  CustomImageDataFromBing,
   type FinalVideoDataFromServer,
   videoCreated,
-  CustomImageDataFromBing,
 } from "../../../lib/interfaces";
-import {
-  initializeNewVideo,
-  getCustomerDetails,
-  getVideoFromDB,
-  getVideosByIds,
-  getSafePublicVideos,
-  getCompletedVideos,
-} from "~/lib/firebase/firestore/utils";
 
 export const dbRouter = createTRPCRouter({
   getVideosByIds: privateProcedure
@@ -54,7 +54,9 @@ export const dbRouter = createTRPCRouter({
   getVideo: publicProcedure
     .input(z.object({ videoId: z.string() }))
     .query(async ({ input }) => {
-      const videoData = await getVideoFromDB(input.videoId);
+      const videoData = explorableVideos.find(
+        (video) => video.uniqueId === input.videoId
+      );
       return { video: videoData };
     }),
   getSafeVideos: privateProcedure.query(async () => {
